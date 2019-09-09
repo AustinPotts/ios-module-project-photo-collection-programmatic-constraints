@@ -13,4 +13,21 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     var photo: Photo?
     
     
+    func setUpSubViews() {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
+        addSubview(imageView)
+        
+        
+        
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        addSubview(label)
+        
+        
+    }
+    
+    
 }
